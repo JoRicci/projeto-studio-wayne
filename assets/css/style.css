@@ -1,0 +1,10 @@
+@import url(geral.css);
+/* body */
+@import url(home/header.css);
+@import url(home/main.css);
+@import url(home/modalidades.css);
+@import url(home/motivaçao.css);
+@import url(home/sobre.css);
+@import url(home/planos.css);
+@import url(home/contato.css);
+@import url(home/footer.css);

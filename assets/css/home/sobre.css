@@ -1,0 +1,97 @@
+article.sobre{
+    padding: 80px 5%;
+    color: #ffffff;
+    background-color: black;
+}
+
+.sobre .container-box{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.container h2 {
+    font-size: 4rem;
+    font-family: var(--titulos);
+    color: #ffffff;
+    line-height: 1.44;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    animation: fadeInUp 0.8s ease forwards;
+    margin-bottom: 3rem;
+}
+
+.container h2::before{
+    content: "";
+    width: 4px;
+    height: 5rem;
+    background-color:var(--cor-01);
+    position: absolute;
+    left: -20px;
+    border-radius: 4px;
+}
+
+
+.container h3{
+    font-size:2rem;
+    font-family: var(--titulos);
+    color: #ffffff;
+    line-height: 1.44;
+    margin-bottom: 5rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+
+.container .sobre-img img{
+    border-radius: 4px;
+    align-self: right;
+}
+
+.sobre-texto{
+font-size:1.250rem;
+font-family: var(--texto);
+display: flex;
+flex-direction: column;
+  gap: 1.5rem;
+  line-height: 1.6;
+}
+
+
+/* Celulares */
+@media (max-width: 600px) {
+  /* Ajustes para mobile */
+}
+
+/* Tablets (em pé) */
+@media (max-width: 768px) {
+    .sobre .container-box{
+
+    grid-template-columns: 1fr;
+}
+.container .sobre-img img{
+    max-height: 100%;
+    margin-bottom: 3rem;
+}
+.sobre-texto{
+font-size:1.125rem;
+gap:2rem;
+}
+.container h2 {
+    font-size: 3rem;
+}
+.container h3 {
+    font-size: 1.5rem;
+}
+
+}
+
+/* Laptops */
+@media (max-width: 992px) {
+  /* Ajustes para notebook */
+}
+
+/* Telas muito grandes */
+@media (min-width: 1201px) {
+  /* Layout expandido */
+}

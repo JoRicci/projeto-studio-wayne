@@ -1,0 +1,91 @@
+section.Modalidades{
+    padding: 120px 5%;
+    background-image: url(../../image/bg-05.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+section.Modalidades::after{
+    content: "";
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.548); 
+    z-index: 1; 
+}
+
+.Modalidades .container{
+    display: grid;
+    gap: 5rem;
+}
+
+.Modalidades .container h2{
+    font-size: 4rem;
+    font-family: var(--titulos);
+    color: #ffffff;
+    line-height: 1.44;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    animation: fadeInUp 0.8s ease forwards;
+    z-index: 2;
+    position: relative;
+}
+
+.Modalidades .container h2::before{
+    content: "";
+    width: 4px;
+    height: 5rem;
+    background-color:var(--cor-01);
+    position: absolute;
+    left: -20px;
+    border-radius: 4px;
+}
+
+.modalidades-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    z-index: 2;
+}
+
+.modalidades-grid span{
+    font-size: 1.3rem;
+    font-family: var(--texto);
+    color:#000000;
+}
+
+.modalidade-card{
+    background-color:var(--cor-01);
+    padding:3rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.modalidade-card:hover {
+  transform: scale(1.05);
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  /* Ajustes para mobile */
+}
+
+/* Tablets (em pé) */
+@media (max-width: 768px) {
+  /* Ajustes para tablet */
+}
+
+/* Laptops */
+@media (max-width: 992px) {
+    .modalidades-grid{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+}
