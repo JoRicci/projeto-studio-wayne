@@ -1,6 +1,6 @@
 section.contato {
     padding: 120px 5%;
-    background-color:  #111111c7;
+    background-color: #111111;
 }
 
 .contato .container-box {
@@ -77,10 +77,38 @@ iframe {
     max-width: 100%;
 }
 
-@media(max-width:800px){
+@media(max-width:768px){
     .contatos {
-    margin-left:0px;
+    padding: 5px;
+    text-align: center;
 }
+
+.contato .container h2{
+    font-size:2rem;
+}
+
+.contato .container-box h3 {
+        font-size: 1.5rem;
+}
+
+.contato-social li a {
+    text-align: center;
+}
+
+.contato .container-box {
+    padding:1rem;
+}
+
+.contatos-box ul li a {
+    font-size: 1.125rem;
+}
+
+.contato .container .menu-rede-social ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
 
 iframe {
     max-width: 100%;

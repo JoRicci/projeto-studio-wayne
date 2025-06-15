@@ -60,13 +60,14 @@ flex-direction: column;
 
 /* Celulares */
 @media (max-width: 600px) {
-  /* Ajustes para mobile */
+  .container h2 {
+    font-size:3rem;
+}
 }
 
 /* Tablets (em pé) */
 @media (max-width: 768px) {
     .sobre .container-box{
-
     grid-template-columns: 1fr;
 }
 .container .sobre-img img{
